@@ -1,0 +1,17 @@
+N=100;
+currentPrecision = digits(15);
+syms x;
+f(x)=1/(1-x);
+sum=0;
+%r=0.10;
+r=1.1;
+for n=0:N;
+   sum=sum+r^n; 
+   sum=vpa(sum);
+   display(sum);
+   error1=abs(f(.10)-sum);   
+ if (error1 < 1.0e-6);
+     display(n);
+ return;
+ end;   
+end;
