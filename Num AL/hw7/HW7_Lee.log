@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.9.9)  19 NOV 2020 13:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.9.9)  23 NOV 2020 12:07
 entering extended mode
-**"c:/Users/lees19/Desktop/homework/Num AL/hw7/HW7_Lee.tex"
-("c:/Users/lees19/Desktop/homework/Num AL/hw7/HW7_Lee.tex"
+**"c:/Users/lees19/Documents/GitHub/Num-AL/Num AL/hw7/HW7_Lee.tex"
+("c:/Users/lees19/Documents/GitHub/Num-AL/Num AL/hw7/HW7_Lee.tex"
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-09-03> ("C:\Program Files\MiKTeX\tex/latex/base\article.cls"
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
@@ -304,7 +304,7 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 19.
 File: l3backend-pdftex.def 2020-09-01 L3 backend support: PDF output (pdfTeX)
 \l__kernel_color_stack_int=\count276
 \l__pdf_internal_box=\box51
-) ("c:/Users\lees19\Desktop\homework\Num AL\hw7\HW7_Lee.aux")
+) ("c:/Users\lees19\Documents\GitHub\Num-AL\Num AL\hw7\HW7_Lee.aux")
 \openout1 = `HW7_Lee.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
@@ -393,7 +393,7 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 36.
 LaTeX Info: Redefining \pageref on input line 36.
 LaTeX Info: Redefining \nameref on input line 36.
- ("c:/Users\lees19\Desktop\homework\Num AL\hw7\HW7_Lee.out") ("c:/Users\lees19\Desktop\homework\Num AL\hw7\HW7_Lee.out")
+ ("c:/Users\lees19\Documents\GitHub\Num-AL\Num AL\hw7\HW7_Lee.out") ("c:/Users\lees19\Documents\GitHub\Num-AL\Num AL\hw7\HW7_Lee.out")
 \@outlinefile=\write3
 \openout3 = `HW7_Lee.out'.
 
@@ -424,32 +424,58 @@ File: number3.png Graphic file (type png)
 <use number3.png>
 Package pdftex.def Info: number3.png  used on input line 51.
 (pdftex.def)             Requested size: 257.46123pt x 111.41597pt.
- 
-AED: lastpage setting LastPage
+<number4.png, id=7, 650.43pt x 130.98938pt>
+File: number4.png Graphic file (type png)
+<use number4.png>
+Package pdftex.def Info: number4.png  used on input line 57.
+(pdftex.def)             Requested size: 455.2979pt x 91.69193pt.
+<numbe4error.png, id=8, 234.1247pt x 60.97781pt>
+File: numbe4error.png Graphic file (type png)
+<use numbe4error.png>
+Package pdftex.def Info: numbe4error.png  used on input line 59.
+(pdftex.def)             Requested size: 234.12411pt x 60.97765pt.
+
+Overfull \hbox (38.49104pt too wide) in paragraph at lines 56--61
+[] 
+ []
+
 [1
 
-{C:/Users/lees19/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <c:/Users/lees19/Desktop/homework/Num AL/hw7/number1.png> <c:/Users/lees19/Desktop/homework/Num AL/hw7/number2.png> <c:/Users/lees19/Desktop/homework/Num AL/hw7/number3.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 56.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 56.
- ("c:/Users\lees19\Desktop\homework\Num AL\hw7\HW7_Lee.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 56.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 56.
+{C:/Users/lees19/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <c:/Users/lees19/Documents/GitHub/Num-AL/Num AL/hw7/number1.png> <c:/Users/lees19/Documents/GitHub/Num-AL/Num AL/hw7/number2.png> <c:/Users/lees19/Documents/GitHub/Num-AL/Num AL/hw7/number3.png> <c:/Users/lees19/Documents/GitHub/Num-AL/Num AL/hw7/number4.png>]
+<number5.png, id=25, 651.93562pt x 208.52907pt>
+File: number5.png Graphic file (type png)
+<use number5.png>
+Package pdftex.def Info: number5.png  used on input line 65.
+(pdftex.def)             Requested size: 456.35182pt x 145.96935pt.
+
+Overfull \hbox (39.54497pt too wide) in paragraph at lines 63--69
+[] 
+ []
+
+
+AED: lastpage setting LastPage
+[2 <c:/Users/lees19/Documents/GitHub/Num-AL/Num AL/hw7/numbe4error.png> <c:/Users/lees19/Documents/GitHub/Num-AL/Num AL/hw7/number5.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 93.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 93.
+ ("c:/Users\lees19\Documents\GitHub\Num-AL\Num AL\hw7\HW7_Lee.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 93.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 93.
 Package rerunfilecheck Info: File `HW7_Lee.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 56.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 93.
  ) 
 Here is how much of TeX's memory you used:
- 8908 strings out of 481199
- 128177 string characters out of 2915347
- 408251 words of memory out of 3000000
- 24340 multiletter control sequences out of 15000+200000
+ 8930 strings out of 481199
+ 128578 string characters out of 2915347
+ 411251 words of memory out of 3000000
+ 24355 multiletter control sequences out of 15000+200000
  540227 words of font info for 50 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,5n,45p,270b,313s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on "c:/Users\lees19\Desktop\homework\Num AL\hw7\HW7_Lee.pdf" (1 page, 30682 bytes).
+ 43i,9n,45p,277b,492s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on "c:/Users\lees19\Documents\GitHub\Num-AL\Num AL\hw7\HW7_Lee.pdf" (2 pages, 85914 bytes).
 PDF statistics:
- 30 PDF objects out of 1000 (max. 8388607)
- 6 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 PDF objects out of 1000 (max. 8388607)
+ 10 named destinations out of 1000 (max. 500000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
