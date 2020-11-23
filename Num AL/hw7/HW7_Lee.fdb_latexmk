@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1606151270 "c:/Users/lees19/Documents/GitHub/Num-AL/Num AL/hw7/HW7_Lee.tex" "c:/Users/lees19/Documents/GitHub/Num-AL/Num AL/hw7/HW7_Lee.pdf" "HW7_Lee" 1606151271
+["pdflatex"] 1606151270 "c:/Users/lees19/Documents/GitHub/Num-AL/Num AL/hw7/HW7_Lee.tex" "c:/Users/lees19/Documents/GitHub/Num-AL/Num AL/hw7/HW7_Lee.pdf" "HW7_Lee" 1606151355
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233951848 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1233951854 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -91,9 +91,9 @@
   "C:/Users/lees19/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1599690255 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "HW7_Lee.aux" 1606151271 757 57807d2400c150987558705201f0410e "pdflatex"
   "HW7_Lee.out" 1606151271 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "HW7_Lee.tex" 1606151269 3307 00c7b6113a47fe845a9ece62927346b1 ""
+  "HW7_Lee.tex" 1606151355 3307 00c7b6113a47fe845a9ece62927346b1 ""
   "c:/Users/lees19/Documents/GitHub/Num-AL/Num AL/hw7/HW7_Lee.aux" 1606151271 757 57807d2400c150987558705201f0410e ""
-  "c:/Users/lees19/Documents/GitHub/Num-AL/Num AL/hw7/HW7_Lee.tex" 1606151269 3307 00c7b6113a47fe845a9ece62927346b1 ""
+  "c:/Users/lees19/Documents/GitHub/Num-AL/Num AL/hw7/HW7_Lee.tex" 1606151355 3307 00c7b6113a47fe845a9ece62927346b1 ""
   "numbe4error.png" 1606148309 1588 6e137715829c72d59677bfcb0dad9618 ""
   "number1.png" 1605801277 2131 1c432f1444dd68264c518be7a366aac6 ""
   "number2.png" 1605811245 2117 b86b2a31f4215d795ceb938948683fe6 ""
@@ -101,9 +101,9 @@
   "number4.png" 1606149416 6344 81db8e74809a1ab7d27315e7d74faaff ""
   "number5.png" 1606149812 10064 3b891f98477c476cc0efee14d0798a90 ""
   (generated)
-  "HW7_Lee.log"
+  "c:/Users/lees19/Documents/GitHub/Num-AL/Num AL/hw7/HW7_Lee.pdf"
+  "c:/Users/lees19/Documents/GitHub/Num-AL/Num AL/hw7/HW7_Lee.log"
   "HW7_Lee.out"
   "HW7_Lee.pdf"
-  "c:/Users/lees19/Documents/GitHub/Num-AL/Num AL/hw7/HW7_Lee.log"
-  "c:/Users/lees19/Documents/GitHub/Num-AL/Num AL/hw7/HW7_Lee.pdf"
   "HW7_Lee.aux"
+  "HW7_Lee.log"
