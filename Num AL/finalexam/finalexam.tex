@@ -1,0 +1,168 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage{fullpage}
+\usepackage[top=2cm, bottom=4cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
+\usepackage{lastpage}
+\usepackage{enumerate}
+\usepackage{fancyhdr}
+\usepackage{mathrsfs}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{float}
+
+\hypersetup{%
+  colorlinks=true,
+  linkcolor=blue,
+  linkbordercolor={0 0 1}
+}
+ 
+\renewcommand\lstlistingname{Algorithm}
+\renewcommand\lstlistlistingname{Algorithms}
+\def\lstlistingautorefname{Alg.}
+
+\lstdefinestyle{Python}{
+    language        = Python,
+    frame           = lines, 
+    basicstyle      = \footnotesize,
+    keywordstyle    = \color{blue},
+    stringstyle     = \color{green},
+    commentstyle    = \color{red}\ttfamily
+}
+
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\begin{document}
+Sunny Lee and Connor Stevens\\
+Numerical Analysis 1\\
+Final Exam\\
+12/12/2020\\
+\begin{enumerate}
+    \item 
+    \begin{enumerate}
+        \item 
+        \begin{gather}
+            x = \frac{\pi}{4}, x+h = \frac{\pi}{4} + .1\\
+            f'(x) = \frac{f(x+h) - f(x)}{h}\\
+            \frac{cos(\frac{\pi}{4} + .1) - cos(\frac{\pi}{4})}{h}\\
+            f'(x) = -0.74125474509
+        \end{gather}
+        So, using the 2 point formula, we find the derivative approximation is $-0.74125474509$,
+        and our error bound: 
+        \begin{gather}
+            \frac{h}{2}f''(\xi) = -\frac{h}{2}cos(\xi)\\
+            \xi \in [\frac{\pi}{4}, \frac{\pi}{4}+.1]\\
+            max\{f''(\xi)\} = -cos(\frac{\pi}{4}+.1) \approx 0.63298130667\\
+            \frac{h}{2}(0.63298130667) = 0.03164906533
+        \end{gather}
+        
+        \item 
+        Using the 3-point formula: 
+        \begin{gather}
+            f'(x) = \frac{1}{2h}[-cos(\frac{\pi}{4} - .1) + cos(\frac{\pi}{4} + .1)]\\
+            \frac{1}{.2}[-0.1411857718]\\
+            f'(x) = -0.705928859
+        \end{gather}
+        We estimate the derivative at $\frac{\pi}{4}$ to be about $-0.705928859$. 
+        Using the error term: 
+        \begin{gather}
+            \frac{h^2}{6}f^{(3)}(\xi(x))\\
+            \xi \in [\frac{\pi}{4} - .1, \frac{\pi}{4} + .1]\\
+            max\{f^{(3)}(\xi)\} = 0.774167078477\\
+            \frac{h^2}{6}(0.774167078477) = 0.00129027846413
+        \end{gather} 
+        We find that the error for the approximation of the derivative is approximately
+        $0.00129027846413$.
+
+        \item
+        Part (a) Lagrange interpolating polynomial was a degree 1 polynomial and (b) used Lagrange interpolating polynomial of degree 2. 
+    \end{enumerate}
+
+    \item
+    \begin{enumerate}
+        \item First order Lagrange Polynomial
+        \item Second order Lagrange Polynomial
+        \item Third order Lagrange Polynomial
+    \end{enumerate}
+    
+    \item
+    Using the composite Simpson's rule for our data points with a step size of $h = .1$: 
+    \begin{gather}
+        \frac{h}{3}(f(1) + f(1.8) + 4f(1.2)+2f(1.4)+4f(1.6)))\\
+        \frac{.2}{3}(1.54+3.11+4(1.81)+2(2.15)+4(2.58))) = 1.7673
+    \end{gather}
+    
+    Using the composite Simpson's rule for our data points with a step size of $h = .2$: 
+    \begin{gather}
+        \frac{h}{3}(f(1) + f(1.8) + 4(1.4))\\
+        \frac{.2}{3}(1.54+3.11+4(2.15)) = 1.7667
+    \end{gather}
+    
+    \item
+    The two principal contributions to total numerical error come in the form of rounding and truncation error. Rounding happens because we cannot have an infinite amount of decimals in our computations, thus, rounding error occurs. Truncation errors come from the fact that we are approximating mathematical processes. 
+    
+    \item We can accurately compute f(x) if we rationalize the denominator.
+    \begin{gather}
+        \frac{1}{\sqrt{x+2} - \sqrt{x}} \frac{\sqrt{x+2}+\sqrt{x}}{\sqrt{x+2}+\sqrt{x}}\\
+        \frac{\sqrt{x+2}+\sqrt{x}}{x+2-x}\\
+        \frac{\sqrt{x+2}+\sqrt{x}}{2}
+    \end{gather}
+    
+    \item
+    Using a Lagrange polynomial to interpolate 100 equally spaced points would be fine, as we can set up the polynomial in a Vandermonde matrix and use linear algebra techniques to easily compute the Lagrange Polynomial.
+    
+    \item
+    Using divided differences we filled out the rest of the tables with the values below:
+    \begin{gather}
+        f[x_1, x_2] = -0.5490\\
+        f[x_0.x_1,x_2] = -0.0495\\
+        f[x_0,x_1,x_2,x_3] = 0.0658\\
+    \end{gather}
+    Now, after filling out the table, we can use the table to find a backwards divided difference polynomial, which is of degree 3. $P_3(x) = 0.2818 - 0.5787(x-1.9) - 0.0495(x-1.9)(x-1.6) + 0.0658(x-1.9)(x-1.6)(x-1.3)$.  
+    
+    \item
+    To find the real roots of the polynomial with tol = $10^{-6}$ we decided to use modified Newton's Method. Running our program we made for class we got the approximate roots of $x$ at:\\
+    $x = -1.738956$ (with $p_0 = -2$)\\
+    $x = -1$ (with $p_0 = -.5$)\\
+    $x = 1.254882$ (with $p_0  = 1$)\\
+    $x = 3$ (with $p_0 = 2.5$)
+    
+    \item
+    Using the function $g = cos(x)$ and the interval $[0, 1]$, we guarantee that the fixed point method prerequisites are met. To find the number of iterations to obtain an approximation within $10^{-5}$, we must first find our $k$ value: 
+    \begin{gather}
+        |g'(\epsilon)|\leq k, \epsilon \in [0, 1]
+    \end{gather}
+    Since $g'$ has a maximum absolute value of $sin(1)$, we set our $k = sin(1)$. Thus: 
+    \begin{gather}
+        10^{-5} \leq k^n max\{p_0-a, b-p_0\}\\
+        10^{-5} \leq k^n .5\\
+        \frac{10^{-5}}{.5} \leq k^n\\
+        \ln{\frac{10^{-5}}{.5}} \leq n\ln{k}\\
+        \frac{\ln{\frac{10^{-5}}{.5}}}{\ln{k}} \leq n\\
+        62.6856514895 \leq n
+    \end{gather}
+    So it would take at least $63$ iterations to converge to the correct root.
+    
+    \item
+    Since $S_1(2) = S_2(2)$, $a = 2$. Since $S_1'(2) = S_2'(2)$, $b = 1$. Since $S_1''(2) = S_2''(2)$, $c = 2$. Since 
+    $f'(1) = f'(3)$, $3 = b + 2c + 3d$ and solving for $d$, we find that $d = -\frac{2}{3}$. Thus, our values for $a, b, c, d$ are $2, 1, 2, -\frac{2}{3}$ respectively. 
+    
+    \item
+    By using the divided difference from $[0, 4]$ with a step size of $h = .1$, we find that our forward divided difference approximates $e^{.9}$ as $2.459603111156950$ which has an error of about $.8108818404568217$. Using Simpson's rule, we estimate the value of the function to be about $0.886226911762202$. 
+    
+    \item
+    First what we want to do to find the Taylor polynomial for $f(x)$, we need to take the derivative 4 times at $x = 0$. Thus we end up with:
+    \begin{gather}
+        f(0) = \frac{1}{1+0} = 1\\
+        f'(0) = \frac{-2(0)}{(1+0)^2} = 0\\
+        f''(0) = \frac{2(3(0)-1}{(1+0)^3} = -2\\
+        f^{(3)}(0) = \frac{-24(0)(0-1)}{(1+0)^4} = 0\\
+        f^{(4)}(0) = \frac{24(5x^4 - 10x^2 + 1}{(1+0)^5} = 24
+    \end{gather}
+    Plugging these values into our Taylor Polynomial function we get $P_4(x) = 1 - \frac{2}{2!}(x^2 - 0) + \frac{24}{4!}(x^4 - 0)$. Thus $P_4(x) = 1 - x^2 + x^4$. Using the fourth degree Taylor Polynomial we can calculate an actual error between the two integrals of about $0.0812685$. To calculate the error bound we calculated $\int_0^1 P_6(x)$, where $P_6(x)$ is the sixth degree Taylor Polynomial of $f(x)$. This gave us an error bound of $0.7238095$. 
+    
+    
+\end{enumerate}
+
+\end{document}
